@@ -17,8 +17,8 @@ steps:
 
 - task: UiPathInstallPlatform@6
   inputs:
-    cliVersion: 'Windows.25.10.3'
-
+    cliVersion: 'CustomVersion'
+    cliNupkgPath: '"C:\Users\Neerati.Akshitha\Downloads\UiPath.CLI.Windows.25.10.13.nupkg"'
 - task: UiPathPack@6
   inputs:
     projectJsonPath: '$(Build.SourcesDirectory)'
